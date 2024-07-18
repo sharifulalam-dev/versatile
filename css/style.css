@@ -39,6 +39,19 @@ html {
   line-height: 1.7;
 }
 
+.section__title {
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.section__title > h1 {
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+  color: #fff;
+}
+
 .btn {
   padding: 1.6rem 4rem;
   color: var(--color-white);
@@ -231,6 +244,40 @@ body {
   left: 0.5rem;
 }
 
+/* main section start here */
+.main {
+  max-width: 106rem;
+  margin: 0 auto;
+}
+/* habit section */
+.habit__gallery {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.habit__gallery-item img {
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+
+.habit__gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.habit__gallery-item h3 {
+  color: #fff;
+}
+
+.habit__gallery-item p {
+  width: 100%;
+  padding: 5px;
+}
+
 @media screen and (max-width: 576px) {
   .nav__mobile {
     display: flex;
@@ -284,5 +331,16 @@ body {
 
   .header__section {
     background: #000;
+  }
+
+  /* habit */
+  .habit__gallery {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section__title h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem;
   }
 }
