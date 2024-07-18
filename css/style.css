@@ -241,10 +241,15 @@ body {
   }
 
   .header__hero {
+    padding: 0;
+
     flex-direction: column;
+    justify-content: left;
   }
   .hero__content {
-    width: 80%;
+    width: 100%;
+    margin: 0;
+    align-items: flex-start;
   }
 
   .hero__btn {
