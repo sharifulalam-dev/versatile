@@ -276,4 +276,8 @@ body {
   .count--1 h3 {
     font-size: 3.5rem;
   }
+
+  .header__section {
+    background: none;
+  }
 }
