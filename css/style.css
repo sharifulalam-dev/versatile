@@ -25,8 +25,10 @@ ul {
 }
 
 ul li a {
+  font-size: 1.4rem;
   text-decoration: none;
   display: inline-block;
+  color: var(--primary-color);
 }
 html {
   font-size: 62.5%;
@@ -132,7 +134,7 @@ body {
 .nav__mobile {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.5rem;
 }
 .nav__mobile hr {
   width: 4.5rem;
@@ -153,7 +155,7 @@ body {
 }
 
 .hero__title {
-  font-size: 78px;
+  font-size: 6rem;
   font-weight: 900;
   line-height: 110%;
   color: var(--color-white);
@@ -189,7 +191,7 @@ body {
   padding: 2rem 4rem;
   text-align: left;
   position: absolute;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5);
 }
 
 .count h3 {
@@ -219,12 +221,12 @@ body {
 .count__content::after {
   content: "";
   display: inline-block;
-  height: 15px;
-  width: 15px;
-  top: 33px;
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 3.3rem;
   background-color: var(--color-white);
   position: absolute;
-  left: 30px;
+  left: 3rem;
   z-index: 2;
   clip-path: polygon(0 0, 1% 0, 100% 50%, 0 100%, 0% 100%);
 }
@@ -240,7 +242,7 @@ body {
 
 .count--2 {
   padding-left: 7rem;
-  bottom: 5.5rem;
+  bottom: 14%;
   left: 0.5rem;
 }
 
@@ -274,8 +276,376 @@ body {
 }
 
 .habit__gallery-item p {
+  width: 90%;
+  padding: 0.5rem;
+}
+
+/* membership */
+.membership {
+  padding: 3rem 3rem 3rem 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1.8rem;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.membership__content {
+  max-width: 44.5rem;
+}
+
+.membership__title {
+  font-size: 4.8rem;
+  color: #fff;
+  margin-bottom: 1.4rem;
+}
+
+.membership__btn {
+  margin-top: 3.4rem;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.membership__image {
+  max-width: 36.6rem;
+  align-self: center;
+}
+
+.membership__image img {
   width: 100%;
-  padding: 5px;
+  border-radius: 1rem;
+}
+/* training */
+
+.training__title {
+  text-align: left;
+}
+
+.training__description {
+  width: 50%;
+}
+
+.training__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.training__gallery-item {
+  height: 23rem;
+  position: relative;
+}
+
+.training__gallery-item p {
+  width: 15rem;
+  position: absolute;
+
+  color: #000;
+}
+
+.t_g_i-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(68, 233, 241, 0.6),
+      rgba(68, 233, 241, 0.6)
+    ),
+    url("../images/exercise1.jpg");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.t_g_i-1 p {
+  bottom: 10%;
+  left: 5%;
+}
+.t_g_i-2 p {
+  top: 5%;
+  left: 5%;
+}
+.t_g_i-3 p {
+  bottom: 10%;
+  right: 5%;
+}
+
+.t_g_i-4 p {
+  top: 10%;
+  right: 5%;
+}
+.t_g_i-5 p {
+  bottom: 10%;
+  left: 5%;
+}
+.t_g_i-6 p {
+  bottom: 10%;
+  left: 5%;
+}
+
+.t_g_i-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(74, 35, 35, 0.634),
+      rgba(86, 46, 46, 0.6)
+    ),
+    url("../images/exercise2.png");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.t_g_i-3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(66, 82, 91, 0.7),
+      rgba(66, 82, 91, 0.6)
+    ),
+    url("../images/exercise3.png");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.t_g_i-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(133, 161, 187, 0.6),
+      rgba(133, 161, 187, 0.6)
+    ),
+    url("../images/exercise4.png");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.t_g_i-5 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(119, 193, 152, 0.6),
+      rgba(119, 193, 152, 0.6)
+    ),
+    url("../images/exercise5.jpg");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.t_g_i-6 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(92, 128, 191, 0.6),
+      rgba(92, 128, 191, 0.6)
+    ),
+    url("../images/exercise6.jpg");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.training__gallery-item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* bmi section */
+
+.bmi {
+  margin: 8rem 0;
+}
+
+.bmi__back {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.bmi__title {
+  max-width: 67rem;
+  text-align: left;
+  margin: 0 auto;
+  padding-right: 11rem;
+}
+
+.bmi__calc__area {
+  padding: 5rem 0;
+
+  display: flex;
+
+  margin-top: 10rem;
+}
+
+.bmi__background {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bmi__chart {
+  margin-right: auto;
+}
+
+.bmi__chart__heading {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.bmi__table {
+  max-width: 31rem;
+}
+
+.bmi__table table {
+  border: 1px solid var(--primary-color);
+  border-collapse: collapse;
+}
+
+.bmi__table table th {
+  color: #fff;
+}
+
+td,
+th {
+  border: 1px solid var(--primary-color);
+  padding: 1.3rem 2rem;
+  text-align: left;
+}
+
+.bmi__calculation {
+  max-width: 58rem;
+}
+
+.bmi__calc__description {
+  margin-bottom: 3.4rem;
+}
+
+.bmi__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.bmi__form input,
+.bmi__form select {
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border: none;
+}
+
+.bmi__last {
+  grid-column: 1 / -1;
+}
+
+.bmi__form select {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+
+.bmi__form select:focus,
+.bmi__form input:focus {
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+
+.bmi__form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+
+.bmi__buton {
+  padding: 1.6rem 4rem;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+/* team gallery */
+.team_gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1.8rem;
+}
+
+.team__member {
+  height: 27rem;
+  position: relative;
+}
+
+.team__member-details {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.team__member-details h3 {
+  color: #fff;
+}
+
+.team__member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.8rem;
+}
+.footer {
+  margin-top: 10rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.footer h1,
+.footer h3 {
+  color: #fff;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 5rem;
+}
+
+.footer__content {
+  margin-bottom: 10rem;
+}
+
+.footer__content + div {
+  width: 40%;
+}
+
+.footer__about h1 {
+  font-size: 7rem;
+  color: var(--secondary-color);
+  margin-bottom: 2.4rem;
+}
+
+.footer__about-description {
+  line-height: 2;
+}
+
+.footer h3 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.footer ul li a {
+  font-size: 1.8rem;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
@@ -341,6 +711,106 @@ body {
 
   .section__title h1 {
     font-size: 2.5rem;
-    margin: 1.5rem;
+  }
+
+  .membership {
+    flex-direction: column;
+  }
+
+  .membership__btn {
+    margin-bottom: 2rem;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .membership__title {
+    font-size: 2.8rem;
+  }
+
+  .training__description {
+    width: 100%;
+  }
+
+  .training__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .training__gallery p {
+    width: 90%;
+  }
+
+  .bmi__title {
+    padding-right: 1rem;
+  }
+
+  .bmi__calc__area {
+    flex-direction: column;
+  }
+
+  .bmi__chart__heading {
+    font-size: 2rem;
+  }
+
+  .bmi__form input,
+  .bmi__form select {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .team_gallery {
+    grid-template-columns: 1fr;
+    padding: 2rem 3rem;
+    gap: 3rem;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
+  body {
+    padding: 0;
+  }
+
+  .header__section,
+  .training,
+  .bmi__title,
+  .bmi__calc__area {
+    padding: 0 1rem;
+  }
+
+  .bmi__chart {
+    margin-right: 0;
+  }
+
+  .bmi__table {
+    max-width: 100%;
+  }
+
+  .bmi__calculation {
+    margin-top: 3.5rem;
+  }
+
+  .bmi__chart__heading {
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .bmi__table table {
+    width: 80%;
+  }
+
+  .bmi__calculation {
+    padding-bottom: 2rem;
+  }
+
+  .bmi__form input::placeholder {
+    color: #fff;
+    padding-left: 5px;
+  }
+
+  .team__member {
+    height: auto;
+  }
+
+  .footer {
+    padding-left: 1.5rem;
   }
 }
