@@ -216,14 +216,20 @@
                 <input type="text" placeholder="Height/cm" />
                 <input type="text" placeholder="Weight/kg" />
                 <input type="text" placeholder="Age" />
-                <select>
-                  <option value="sex">Sex</option>
-                </select>
-                <select class="bmi__last">
-                  <option value="Select an activity factor">
-                    Select an activity factor
-                  </option>
-                </select>
+                <div class="select_style select_style--1">
+                  <select>
+                    <option value="sex">Sex</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down bmi__form-dropdown"></i>
+                </div>
+                <div class="select_style select_style--2">
+                  <select class="bmi__last">
+                    <option value="Select an activity factor">
+                      Select an activity factor
+                    </option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down bmi__form-dropdown"></i>
+                </div>
               </form>
 
               <button class="btn bmi__buton">Calculate</button>
@@ -286,6 +292,157 @@
           </div>
         </div>
       </section>
+
+      <section class="pricing">
+        <div class="section__title pricing__title">
+          <h1 class="pricing__heading">Our price</h1>
+          <p class="pricing__description">
+            We offer exclusive price for our customer. we hope all you enjoy the
+            life through gym.
+          </p>
+        </div>
+
+        <div class="pricing__section">
+          <div class="price__item price__item--1">
+            <h3 class="price__item__heading">Basic</h3>
+            <p class="price__item__text">
+              Best for startup who wants to start immediately.
+            </p>
+
+            <div class="price__quote">
+              $59.99 <span class="price__style">/ month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Basic Equipment
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i></span
+                >Cardio area access
+              </li>
+              <li>
+                <span class="price__cross"
+                  ><i class="fa-solid fa-xmark"></i
+                ></span>
+                Towel service
+              </li>
+              <li>
+                <span class="price__cross"
+                  ><i class="fa-solid fa-xmark"></i></span
+                >Wifi Access
+              </li>
+              <li>
+                <span class="price__cross"
+                  ><i class="fa-solid fa-xmark"></i></span
+                >Unlimited Dancing, yoga classes
+              </li>
+              <li>
+                <span class="price__cross"
+                  ><i class="fa-solid fa-xmark"></i></span
+                >Access to the VIP locker room
+              </li>
+            </ul>
+            <button class="btn price__btn">Order Now</button>
+          </div>
+
+          <div class="price__item price__item--2">
+            <h3 class="price__item__heading">Gold</h3>
+            <p class="price__item__text">
+              Best for Active people who wants to grow daily with routine.
+            </p>
+
+            <div class="price__quote">
+              $119.99 <span class="price__style">/ month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Basic Equipment
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i></span
+                >Cardio area access
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Towel service
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i></span
+                >Wifi Access
+              </li>
+              <li>
+                <span class="price__cross"
+                  ><i class="fa-solid fa-xmark"></i></span
+                >Unlimited Dancing, yoga classes
+              </li>
+              <li>
+                <span class="price__cross"
+                  ><i class="fa-solid fa-xmark"></i></span
+                >Access to the VIP locker room
+              </li>
+            </ul>
+            <button class="btn price__btn">Order Now</button>
+          </div>
+
+          <div class="price__item price__item--3">
+            <h3 class="price__item__heading">Platinum</h3>
+            <p class="price__item__text">
+              Best for the people who wants to enjoy the full range of
+              equipment.
+            </p>
+
+            <div class="price__quote">
+              $223.99 <span class="price__style">/ month</span>
+            </div>
+            <ul class="pricing__features">
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Basic Equipment
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i></span
+                >Cardio area access
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Towel service
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i></span
+                >Wifi Access
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i></span
+                >Unlimited Dancing, yoga classes
+              </li>
+              <li>
+                <span class="price__check"
+                  ><i class="fa-solid fa-check"></i></span
+                >Access to the VIP locker room
+              </li>
+            </ul>
+            <button class="btn price__btn">Order Now</button>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="main">
@@ -320,5 +477,10 @@
         <p class="footer__copy">All right reserved @Fitness 2024</p>
       </div>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/34d2e6f15e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
