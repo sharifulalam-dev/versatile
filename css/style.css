@@ -541,16 +541,12 @@ th {
 .bmi__form select {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.6rem;
-  appearance: none;
-  width: 100%;
-}
 
-.select_style--2 {
-  grid-column: 1 / -1;
+  width: 100%;
 }
 
 .bmi__last {
-  width: 100%;
+  grid-column: 1 / -1;
 }
 
 .bmi__form select:focus,
@@ -904,6 +900,10 @@ th {
 
   .bmi__calculation {
     padding-bottom: 2rem;
+  }
+
+  .bmi__form {
+    width: 100%;
   }
 
   .bmi__form input::placeholder {
